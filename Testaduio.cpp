@@ -9,11 +9,26 @@ int main()
     sf::RenderWindow window(sf::VideoMode(640, 480), "My window");
     sf:: Event event;
 
-    //sf::Music music;
+    
+    
+    
+     // Вот уже начинаясо строчки №18 код падает, хотя компилятор сам иницилизирует данный тип 
+    
+    
+    sf::Music music;
+    
+    //Соответсвенно дальше нет смысла работать, с музыкой, если ошибка при запуске 
+    
     //music.openFromFile("C:\\Users\\ArifLaptop\\CLionProjects\\testaudio\\cmake-build-debug\\MainMusic.ogg");
     //music.setVolume(50);
 
     //music.play();
+    
+    
+    //Снизу тестовая часть кода RenderWindow, которая прекрасно работает, если убрать sf::Music
+    
+    
+    
     // run the program as long as the window is open
     while (window.isOpen())
     {
